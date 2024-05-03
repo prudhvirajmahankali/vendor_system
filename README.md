@@ -59,7 +59,7 @@ http://127.0.0.1:8000/POST/api/purchase_orders/<int:po_id>/acknowledge/
 
 
 
-# sample content for create apis
+# sample content for apis
 1) Create a new vendor:         
 {
     "name": "yourname",
