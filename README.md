@@ -8,7 +8,7 @@
 # These apis is secured with superuser
 python manage.py createsuperuser  -- please create the superuser and then run the endpoints
 
-# api endpoints
+# API endpoints
 1) Create a new vendor:                                 
 http://127.0.0.1:8000/POST/api/vendors/       
 
@@ -58,7 +58,7 @@ http://127.0.0.1:8000/POST/api/purchase_orders/<int:po_id>/acknowledge/
 
 
 
-# Sample content for the api endpoints
+# Sample content for the API endpoints
 1) Create a new vendor:         
 {
     "name": "yourname",
@@ -92,3 +92,7 @@ http://127.0.0.1:8000/POST/api/purchase_orders/<int:po_id>/acknowledge/
 
 3) Update acknowledgment_date:      
 {"acknowledgment_date":"2024-05-03"}
+
+
+# Document drive link for each API endpoint
+https://docs.google.com/document/d/11q6lsgrNQNuTvYcwpSiutBf1BYidooq8Px-lzftcZKQ/edit?usp=sharing
