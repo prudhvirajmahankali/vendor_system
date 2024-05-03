@@ -1,66 +1,66 @@
 # important commads for working on this project
-1) python manage.py runserver  -- run the server
-2) python manage.py makemigrations -- for making the migrations
-3) python manage.py sqlmigrate <app_name><migration_filenumber> -- you will get the sql query
-4) python migrate -- it will create the models in the local_server of the postgresql
+1) python manage.py runserver       -- run the server,
+2) python manage.py makemigrations  -- for making the migrations,
+3) python manage.py sqlmigrate <app_name><migration_filenumber>     -- you will get the sql query,
+4) python migrate       -- it will create the models in the local_server of the postgresql,
 
 # this apis is secured with superuser
-username -- prudhviraj 
-password -- 1234
+username    --  prudhviraj,
+password    --  1234
 
 # apis
 
-1) Create a new vendor
+1) Create a new vendor:
 http://127.0.0.1:8000/POST/api/vendors/       
 
 
-2) List all the vendors 
+2) List all the vendors: 
 http://127.0.0.1:8000/GET/api/vendors/    
 
 
-3) Retrieve a specific vendor's details 
+3) Retrieve a specific vendor's details: 
 http://127.0.0.1:8000/GET/api/vendors/<int:vendor_id>/      
 
 
-4) Update a vendor's details
+4) Update a vendor's details:
 http://127.0.0.1:8000/PUT/api/vendors/<int:vendor_id>/     
 
 
-5) Delete a vendor
+5) Delete a vendor:
 http://127.0.0.1:8000/DELETE/api/vendors/<int:vendor_id>/  
 
 
-6) Create a new purchase order
+6) Create a new purchase order:
 http://127.0.0.1:8000/POST/api/purchase_orders/ 
 
 
-7) List all purchase orders with an option to filter by vendor 
+7) List all purchase orders with an option to filter by vendor: 
 http://127.0.0.1:8000/GET/api/purchase_orders/ 
 
 
-8) Retrieve details of a specific purchase order
+8) Retrieve details of a specific purchase order:
 http://127.0.0.1:8000/GET/api/purchase_orders/<int:po_id>/
 
 
-9) update a purchase order
+9) update a purchase order:
 http://127.0.0.1:8000/PUT/api/purchase_orders/<int:po_id>/ 
 
 
-10) Delete a purchase order
+10) Delete a purchase order:
 http://127.0.0.1:8000/DELETE/api/purchase_orders/<int:po_id>/
 
 
-11) Retrieve a vendor's performance metrics 
+11) Retrieve a vendor's performance metrics: 
 http://127.0.0.1:8000/GET/api/vendors/<int:vendor_id>/performance/
 
 
-12) Update acknowledgment_date in the purchase_order and average_response_time in vendor
+12) Update acknowledgment_date in the purchase_order and average_response_time in vendor:
 http://127.0.0.1:8000/POST/api/purchase_orders/<int:po_id>/acknowledge/
 
 
 
 # sample content for create apis
-1) Create a new vendor
+1) Create a new vendor:         
 {
     "name": "yourname",
     "contact_details": "your personal number",
@@ -73,7 +73,7 @@ http://127.0.0.1:8000/POST/api/purchase_orders/<int:po_id>/acknowledge/
 }
 
 
-2) Create a new purchase order
+2) Create a new purchase order:
 {
     "po_number": "Your_PO_Number",
     "vendor": 1, 
@@ -91,6 +91,5 @@ http://127.0.0.1:8000/POST/api/purchase_orders/<int:po_id>/acknowledge/
     "acknowledgment_date": "2024-05-03T08:00:00Z" 
 }
 
-3) Update acknowledgment_date
-
+3) Update acknowledgment_date:      
 {"acknowledgment_date":"2024-05-03"}
