@@ -94,5 +94,5 @@ http://127.0.0.1:8000/POST/api/purchase_orders/<int:po_id>/acknowledge/
 {"acknowledgment_date":"2024-05-03"}
 
 
-# Document drive link for each API endpoint
+# Documentation for each API endpoint
 https://docs.google.com/document/d/11q6lsgrNQNuTvYcwpSiutBf1BYidooq8Px-lzftcZKQ/edit?usp=sharing
