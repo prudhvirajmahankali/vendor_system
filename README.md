@@ -1,15 +1,14 @@
 # Important commads for working on this project
+
 1) python manage.py runserver       --      run the server,              
 2) python manage.py makemigrations  --      for making the migrations,
 3) python manage.py sqlmigrate <app_name><migration_filenumber>     -- you will get the sql query,
 4) python migrate       --         it will create the models in the local_server of the postgresql,
 
 # These apis is secured with superuser
-username    --  prudhviraj,                         
-password    --  1234
+python manage.py createsuperuser  -- please create the superuser and then run the endpoints
 
 # api endpoints
-
 1) Create a new vendor:                                 
 http://127.0.0.1:8000/POST/api/vendors/       
 
